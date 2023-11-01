@@ -22,22 +22,22 @@ namespace MonstersUniversity.Pages.Students
       public Student Student { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
-        {
-            if (id == null || _context.Student == null)
-            {
-                return NotFound();
-            }
+{
+    if (id == null)
+    {
+        return NotFound();
+    }
 
-            var student = await _context.Student.FirstOrDefaultAsync(m => m.ID == id);
-            if (student == null)
-            {
-                return NotFound();
-            }
-            else 
-            {
-                Student = student;
-            }
-            return Page();
-        }
+Student = await _context.Students
+        .Include(s => s.Enrollments)
+        .ThenInclude(e => e.Course)
+        .AsNoTracking()
+        .FirstOrDefaultAsync(m => m.ID == id);
+    if (Student == null)
+    {
+        return NotFound();
+    }
+    return Page();
+}
     }
 }
