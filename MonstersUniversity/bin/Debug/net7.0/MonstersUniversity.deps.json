@@ -9,6 +9,7 @@
       "MonstersUniversity/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "7.0.13",
+          "Microsoft.Data.Sqlite.Core": "7.0.13",
           "Microsoft.EntityFrameworkCore.Design": "7.0.13",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",

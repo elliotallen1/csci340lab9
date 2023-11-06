@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/elliot/Desktop/WebSystems/csci340lab9/MonstersUniversity
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/elliot/Desktop/WebSystems/csci340lab9/MonstersUniversity/Pages/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/elliot/Desktop/WebSystems/csci340lab9/MonstersUniversity/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
